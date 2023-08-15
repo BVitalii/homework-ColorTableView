@@ -13,6 +13,7 @@
 		FAC9A10C2A88B47200FEB42C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC9A10A2A88B47200FEB42C /* Main.storyboard */; };
 		FAC9A10E2A88B47500FEB42C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC9A10D2A88B47500FEB42C /* Assets.xcassets */; };
 		FAC9A1112A88B47500FEB42C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC9A10F2A88B47500FEB42C /* LaunchScreen.storyboard */; };
+		FAC9A11A2A88B4D400FEB42C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9A1192A88B4D400FEB42C /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FAC9A10D2A88B47500FEB42C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC9A1102A88B47500FEB42C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC9A1122A88B47500FEB42C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC9A1192A88B4D400FEB42C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FAC9A1032A88B47200FEB42C /* ColorTableView */ = {
 			isa = PBXGroup;
 			children = (
+				FAC9A1182A88B4A100FEB42C /* Cell */,
 				FAC9A1042A88B47200FEB42C /* AppDelegate.swift */,
 				FAC9A1062A88B47200FEB42C /* SceneDelegate.swift */,
 				FAC9A1082A88B47200FEB42C /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				FAC9A1122A88B47500FEB42C /* Info.plist */,
 			);
 			path = ColorTableView;
+			sourceTree = "<group>";
+		};
+		FAC9A1182A88B4A100FEB42C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAC9A1192A88B4D400FEB42C /* CustomTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				FAC9A1092A88B47200FEB42C /* ViewController.swift in Sources */,
 				FAC9A1052A88B47200FEB42C /* AppDelegate.swift in Sources */,
+				FAC9A11A2A88B4D400FEB42C /* CustomTableViewCell.swift in Sources */,
 				FAC9A1072A88B47200FEB42C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

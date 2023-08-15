@@ -6,18 +6,31 @@
 //
 
 import UIKit
+protocol CustomTableViewDelegate: AnyObject {
+    func myButtonTapped(with title:String)
+}
 
 class CustomTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    var delegate: CustomTableViewDelegate!
+    
+    var title: String = ""
+    
+    @IBOutlet weak var myButton: UIButton!
+    
+    @IBAction func myButtonPressed(_ sender: Any) {
+        delegate?.myButtonTapped(with: title )
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
+    func configureButton(with title:String) {
+        self.title = title
+        myButton.setTitle(title, for: .normal)
+        myButton.tintColor = .gray        
+       }
+    
+    
 }
+
+    
+
+
